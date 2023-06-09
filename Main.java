@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,7 +26,20 @@ public class Main {
 
         System.out.println(Recursivity.toDec(101));
 
-        System.out.println(1 % 10);
+        System.out.println(Recursivity.intToBin(5000000));
+        System.out.println(Recursivity.intToBinInt(524000));
 
+        int[] num = { 1, 2, 3, 4 };
+
+        System.out.println(Recursivity.arraySum(num));
+
+        System.out.println(Arrays.stream(num).boxed().toList());
+
+        System.out.println(Arrays.stream(Recursivity.invertArray(num.clone())).boxed().toList());
+
+        System.out.println(Recursivity.isPalindrome("A man, a plan, a canal – Panama"));
+
+        Recursivity.printDescNumber(4);
     }
+
 }
